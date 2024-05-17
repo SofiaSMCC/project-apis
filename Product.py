@@ -15,7 +15,7 @@ def get_products():
     cursor.close()
     return {"products": result}
 
-@app.get("/product/{id}")
+@app.get("/products/{id}")
 def get_products_by_id(int: id):
     mysql_db = mysql.connector.connect(host=db.host_name, port=db.port_number, user=db.user_name, password=db.password_db, database=db.database_name)
     cursor = mysql_db.cursor()
