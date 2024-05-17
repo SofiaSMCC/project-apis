@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import mysql.connector
 import schemas
-import Product.db as db
+import db
 
 app = FastAPI()
 
